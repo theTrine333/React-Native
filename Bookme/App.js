@@ -8,6 +8,21 @@ import { StatusBar } from 'expo-status-bar';
 import {AppOpenAd, TestIds, AdEventType } from 'react-native-google-mobile-ads';
 import { useEffect } from 'react';
 import mobileAds from 'react-native-google-mobile-ads';
+import * as Notix from 'notix-rn';
+import Home from './screens/Home';
+
+const loadInterstitial = async () => {
+  interstitialLoader = await Notix.Interstitial.createLoader(7563075);
+  interstitialLoader.startLoading();
+
+  try {
+    var interstitialData = await interstitialLoader.next(5000);
+  } catch (Exception) {
+    return;
+  }
+
+  Notix.Interstitial.show(interstitialData);
+};
 
 export default function App() {
   const Stack = createNativeStackNavigator()
@@ -22,6 +37,7 @@ export default function App() {
   useEffect(() => {
     mobileAds().initialize()
     // appOpenAd.show();
+    loadInterstitial();
   }, [])
   
   return (
@@ -29,7 +45,8 @@ export default function App() {
       <StatusBar style="dark" />
       <Stack.Navigator screenOptions={{headerShown:false}}>
         <Stack.Screen name='Startup' component={Startup}/>
-        <Stack.Screen name='ScreenTabs' component={Navigation}/>
+        <Stack.Screen name='Home' component={Home}/>
+        {/* <Stack.Screen name='ScreenTabs' component={Navigation}/> */}
         <Stack.Screen name='Details' component={Details}/>
       </Stack.Navigator>
     </NavigationContainer>
