@@ -17,7 +17,7 @@ const Startup = ({navigation}) => {
           Here you just tell us the book title or the topic and we organise your results.</Text>
         <Text style={style.infoText}>!!!Please use a vpn or a proxy!!!</Text>
         <Pressable style={style.button} onPress={() => {
-          navigation.navigate("ScreenTabs")
+          navigation.navigate("Home")
         }}>
           <Text style={{color:'white',fontWeight:'700'}}>Get Started</Text>
         </Pressable>
