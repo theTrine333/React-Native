@@ -23,3 +23,7 @@
 
    ```bash
    git clone https://github.com/theTrine333/BookME-App.git
+
+## How to Download
+
+just click *[here](https://www.mediafire.com/file/ztp3fb2xog7mvt6/bookme-v1.0.4.apk/file)* to download
