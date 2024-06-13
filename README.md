@@ -22,7 +22,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/theTrine333/BookME-App.git
+   git clone https://github.com/theTrine333/React-Native.git
 
 ## How to Download
 
