@@ -1,4 +1,4 @@
-# ![BookME](https://github.com/theTrine333/BookME-App/blob/main/iconBookeME.png)
+# ![BookME](https://github.com/theTrine333/BookME-App/blob/main/assets/icons/0.png)
 
 **BookME** is a sleek and powerful book search application that allows users to discover and download books effortlessly.
 
